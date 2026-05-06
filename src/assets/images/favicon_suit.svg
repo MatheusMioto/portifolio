@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Ombros / Paletó (Escuro) -->
+  <path d="M 15 100 C 15 50, 85 50, 85 100 Z" fill="#1a1a1a"/>
+  
+  <!-- Gola da Camisa (Branca) -->
+  <path d="M 35 100 L 50 65 L 65 100 Z" fill="#ffffff"/>
+  
+  <!-- Gravata (Cor de Destaque - Verde Água) -->
+  <path d="M 46 72 L 54 72 L 50 100 Z" fill="#2dd4bf"/>
+  <path d="M 48 65 L 52 65 L 54 72 L 46 72 Z" fill="#2dd4bf"/>
+  
+  <!-- Cabeça / Rosto -->
+  <circle cx="50" cy="38" r="22" fill="#e2e8f0"/>
+  
+  <!-- Cabelo (Opcional, estilo limpo) -->
+  <path d="M 26 38 C 26 15, 74 15, 74 38 C 74 25, 26 25, 26 38 Z" fill="#111111"/>
+</svg>

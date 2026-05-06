@@ -1,0 +1,192 @@
+/* ============================================================
+   SOBRE MIM
+   ============================================================ */
+.sobre {
+  background: var(--bg-secondary);
+}
+
+.sobre__title {
+  text-align: left;
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Layout principal (Grid: foto span 2 linhas | content + stats na col direita) ── */
+.sobre__body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+/* ── Coluna da foto ── */
+.sobre__photo-wrapper {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sobre__content {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.sobre__stats {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.sobre__photo-frame {
+  position: relative;
+  width: 300px;
+}
+
+/* Borda decorativa deslocada */
+.sobre__photo-accent {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--accent);
+  transform: translate(10px, 10px);
+  z-index: 0;
+  transition: transform var(--transition);
+}
+
+.sobre__photo-frame:hover .sobre__photo-accent {
+  transform: translate(14px, 14px);
+}
+
+.sobre__photo {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: block;
+}
+
+.sobre__photo:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+}
+
+/* ── Coluna do conteúdo ── */
+
+.sobre__greeting {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.sobre__name {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.sobre__role {
+  display: inline-block;
+  font-size: clamp(0.8rem, 1.4vw, 0.95rem);
+  font-weight: 500;
+  color: var(--bg-primary);
+  background: var(--accent);
+  padding: 0.2rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.sobre__bio {
+  font-size: clamp(0.78rem, 1.2vw, 0.88rem);
+  line-height: 1.8;
+  color: var(--text-secondary);
+  text-align: justify;
+  margin-bottom: 0.85rem;
+}
+
+.sobre__bio strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── Stats ── */
+.sobre__stats {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  align-self: start;
+}
+
+.sobre__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sobre__stat-value {
+  font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.sobre__stat-label {
+  font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   MOBILE  — breakpoint 768px
+   ============================================================ */
+@media (max-width: 768px) {
+  .sobre__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  /* Ordem: 1 = content (texto) | 2 = foto | 3 = stats */
+  .sobre__content {
+    order: 1;
+    text-align: center;
+  }
+
+  .sobre__photo-wrapper {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sobre__stats {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sobre__photo-frame {
+    width: min(260px, 80vw);
+  }
+
+  .sobre__photo {
+    width: 100%;
+    max-width: 100%;
+    height: 320px;
+  }
+
+  .sobre__title {
+    text-align: center;
+  }
+}

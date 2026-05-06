@@ -1,0 +1,59 @@
+/* ============================================================
+   CONTATO
+   ============================================================ */
+.contato {
+  background: var(--bg-primary);
+}
+
+.contato .section-title {
+  text-align: left;
+}
+
+.contato__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contato__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+
+.contato__item:hover {
+  border-color: var(--border-hover);
+  color: var(--text-main);
+  background: var(--bg-card-hover);
+  transform: translateX(6px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 16px var(--accent-glow);
+}
+
+.contato__item-icon {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.contato__item:hover .contato__item-icon {
+  transform: scale(1.15);
+}
+
+.contato__item--whatsapp:hover {
+  border-color: rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 16px rgba(37, 211, 102, 0.2);
+}
+
+.contato__item--whatsapp .contato__item-icon {
+  color: #25d366;
+}

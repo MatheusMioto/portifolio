@@ -1,0 +1,21 @@
+<section class="conhecimentos section" id="knowledge">
+  <div class="container">
+    <h2 class="section-title">Conhecimentos</h2>
+
+    <div class="skills__list">
+      @for (skill of skills; track skill.nome) {
+        <article class="skill-card">
+          <img
+            [src]="skill.iconUrl"
+            [alt]="skill.iconAlt"
+            class="skill-card__icon"
+            width="64"
+            height="64"
+          >
+          <h3 class="skill-card__title">{{ skill.nome }}</h3>
+          <p class="skill-card__desc">{{ skill.descricao }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

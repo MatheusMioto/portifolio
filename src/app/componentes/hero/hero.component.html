@@ -1,0 +1,81 @@
+<section class="hero section" id="home">
+  <div class="container hero__content">
+    <div class="hero__text">
+      <span class="hero__tag">HELLO WORLD 👋🏾</span>
+      <h1 class="hero__title">Eu sou Matheus</h1>
+      <p class="hero__subtitle">{{ textoDigitado }}<span class="hero__cursor"></span></p>
+      <a href="#contact" class="hero__cta">FALE COMIGO</a>
+    </div>
+
+    <div class="hero__image-wrapper">
+      <div class="hero__image-circle">
+        <!-- Laptop SVG inline — sem requisição externa -->
+        <svg class="hero__laptop-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
+          <!-- Sombras da base -->
+          <ellipse cx="120" cy="165" rx="90" ry="8" fill="rgba(0,0,0,0.5)" filter="blur(4px)" />
+
+          <!-- Tela Top / Tampa Traseira simulada -->
+          <path d="M40 30 C40 24, 44 20, 50 20 L190 20 C196 20, 200 24, 200 30 L200 130 L40 130 Z" fill="#2d3748" />
+          <path d="M42 22 C42 16, 46 12, 52 12 L188 12 C194 12, 198 16, 198 22 L198 130 L42 130 Z" fill="#4a5568" />
+
+          <!-- Tela Frontal (Bezels) -->
+          <rect x="42" y="14" width="156" height="116" rx="6" fill="#111827" />
+          <!-- Câmera -->
+          <circle cx="120" cy="22" r="2" fill="#374151" />
+          <circle cx="120" cy="22" r="1" fill="#6b7280" />
+
+          <!-- Tela Glow / Screen -->
+          <rect x="46" y="28" width="148" height="98" fill="#1f2937" />
+          <!-- Gradiente de tela -->
+          <rect x="46" y="28" width="148" height="98" fill="url(#screenGrad)" />
+
+          <defs>
+            <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2" />
+              <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.1" />
+            </linearGradient>
+            <linearGradient id="keyboardGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#9ca3af" />
+              <stop offset="100%" stop-color="#4b5563" />
+            </linearGradient>
+          </defs>
+
+          <!-- Janela do Editor -->
+          <rect x="52" y="34" width="136" height="88" rx="4" fill="#0f172a" />
+          <!-- Top bar do editor -->
+          <rect x="52" y="34" width="136" height="12" rx="4" fill="#1e293b" />
+          <!-- Botões da janela -->
+          <circle cx="58" cy="40" r="2.5" fill="#ef4444" />
+          <circle cx="66" cy="40" r="2.5" fill="#eab308" />
+          <circle cx="74" cy="40" r="2.5" fill="#22c55e" />
+
+          <!-- Código (Linhas) -->
+          <rect x="60" y="52" width="60" height="3" rx="1.5" fill="#38bdf8" />
+          <rect x="60" y="60" width="80" height="3" rx="1.5" fill="#a78bfa" />
+          <rect x="70" y="68" width="50" height="3" rx="1.5" fill="#4ade80" />
+          <rect x="70" y="76" width="90" height="3" rx="1.5" fill="#f472b6" />
+          <rect x="80" y="84" width="70" height="3" rx="1.5" fill="#cbd5e1" />
+          <rect x="80" y="92" width="60" height="3" rx="1.5" fill="#38bdf8" />
+          <rect x="60" y="100" width="40" height="3" rx="1.5" fill="#fbbf24" />
+
+          <!-- Dobradiça -->
+          <rect x="90" y="128" width="60" height="4" rx="2" fill="#1f2937" />
+
+          <!-- Base do Laptop -->
+          <path d="M20 130 L220 130 L235 142 A 4 4 0 0 1 231 148 L9 148 A 4 4 0 0 1 5 142 Z"
+            fill="url(#keyboardGrad)" />
+
+          <!-- Recorte do dedo / Touchpad area base -->
+          <path d="M95 130 L145 130 L150 144 L90 144 Z" fill="#6b7280" opacity="0.3" />
+          <path d="M105 130 L135 130 C 135 132, 133 133, 120 133 C 107 133, 105 132, 105 130 Z" fill="#4b5563" />
+
+          <!-- Base inferior -->
+          <path d="M5 148 L235 148 L230 152 L10 152 Z" fill="#374151" />
+
+          <!-- Brilho no topo da base -->
+          <line x1="22" y1="131" x2="218" y2="131" stroke="#e5e7eb" stroke-width="0.5" opacity="0.5" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>

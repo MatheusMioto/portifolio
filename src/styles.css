@@ -1,0 +1,155 @@
+/* ============================================================
+   DESIGN TOKENS — Portifólio Matheus Mioto
+   ============================================================ */
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #111111;
+  --bg-card: #161616;
+  --bg-card-hover: #1d1d1d;
+  --accent: #2dd4bf;
+  --accent-dark: #14b8a6;
+  --accent-glow: rgba(45, 212, 191, 0.15);
+  --accent-glow-strong: rgba(45, 212, 191, 0.3);
+  --text-main: #ffffff;
+  --text-secondary: #d1d1d1;
+  --text-muted: #808080;
+  --border: rgba(45, 212, 191, 0.12);
+  --border-hover: rgba(45, 212, 191, 0.35);
+  --nav-bg: rgba(13, 13, 13, 0.85);
+  --shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --transition: 0.3s ease;
+  --font: 'Poppins', sans-serif;
+
+  /* Light mode overrides (toggle) */
+  --light-bg-primary: #f0f4f8;
+  --light-bg-card: #ffffff;
+  --light-text-main: #0d0d0d;
+  --light-text-secondary: #2d2d2d;
+  --light-text-muted: #606060;
+  --light-nav-bg: rgba(240, 244, 248, 0.92);
+}
+
+/* ============================================================
+   LIGHT MODE
+   ============================================================ */
+body.light-mode {
+  --bg-primary: var(--light-bg-primary);
+  --bg-secondary: #e8edf2;
+  --bg-card: var(--light-bg-card);
+  --bg-card-hover: #f7fafd;
+  --text-main: var(--light-text-main);
+  --text-secondary: var(--light-text-secondary);
+  --text-muted: var(--light-text-muted);
+  --nav-bg: var(--light-nav-bg);
+  --border: rgba(45, 212, 191, 0.25);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  transition: background-color var(--transition), color var(--transition);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* ============================================================
+   UTILITÁRIOS
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px var(--accent-glow); }
+  50% { box-shadow: 0 0 40px var(--accent-glow-strong); }
+}
+
+.animate-in {
+  animation: fadeInUp 0.6s ease both;
+}
