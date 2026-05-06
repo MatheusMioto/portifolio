@@ -1,59 +1,92 @@
-# Portifolio
+# 🚀 Portfólio — Matheus Mioto
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.9.
+> Projeto desenvolvido para apresentar de forma visual e interativa minha trajetória profissional, habilidades técnicas e projetos realizados — voltado para recrutadores, conexões do LinkedIn e qualquer pessoa interessada no meu perfil como desenvolvedor.
 
-## Development server
+Este portfólio foi criado com o objetivo de ir além de um currículo tradicional: aqui você encontra uma vitrine dinâmica dos meus conhecimentos em desenvolvimento de software, com foco em experiência do usuário e apresentação clara das minhas competências técnicas.
 
-To start a local development server, run:
+---
+
+## 🎯 Motivação
+
+Currículos em PDF têm limitações. Este projeto nasceu da necessidade de ter um espaço próprio onde eu possa:
+
+- **Demonstrar habilidades na prática**, e não apenas listá-las em texto
+- **Apresentar projetos reais** com descrições, tecnologias utilizadas e links
+- **Criar uma presença online profissional** complementar ao LinkedIn
+- **Evoluir continuamente** o conteúdo conforme adquiro novas experiências
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **[Angular](https://angular.dev/)** (v19) — Framework principal
+- **Angular CLI** (v19.1.9) — Scaffolding e build
+- **TypeScript** — Linguagem base
+- **HTML5 / SCSS** — Estrutura e estilização
+
+---
+
+## ⚙️ Ambiente de Desenvolvimento
+
+Para iniciar o servidor local, execute:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse `http://localhost:4200/` no navegador. A aplicação recarrega automaticamente a cada alteração nos arquivos fonte.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## 🏗️ Build de Produção
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Os artefatos serão gerados no diretório `dist/`, otimizados para performance e velocidade.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🧪 Testes
 
+**Unitários** (Karma):
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
+**End-to-end:**
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+> O Angular CLI não inclui um framework de e2e por padrão — escolha o que melhor se adequar às suas necessidades.
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📐 Scaffolding
+
+Para gerar novos artefatos via CLI:
+
+```bash
+ng generate component nome-do-componente
+```
+
+Liste todos os schematics disponíveis:
+
+```bash
+ng generate --help
+```
+
+---
+
+## 📚 Recursos
+
+- [Angular CLI — Referência de Comandos](https://angular.dev/tools/cli)
+- [Angular Documentation](https://angular.dev/overview)
+
+---
+
+## 📬 Contato
+
+Caso queira conversar sobre oportunidades ou projetos, me encontre no [LinkedIn](https://www.linkedin.com/in/matheusMioto) ou acesse o portfólio publicado.
